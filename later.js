@@ -818,7 +818,7 @@ later = function() {
         return;
       }
       var diff = next[0].getTime() - now;
-      if (diff < 1e3) {
+      if (diff < 6e3) {
         diff = next[1] ? next[1].getTime() - now : 1e3;
       }
       if (diff < 2147483647) {
